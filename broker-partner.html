@@ -433,7 +433,7 @@
 
               <!-- Company -->
               <div class="field">
-                <label for="companyName">Company name <span class="req">*</span></label>
+                <label for="companyName">Company name <span style="font-weight:400;color:#888;">(optional)</span></label>
                 <input type="text" id="companyName" name="companyName" autocomplete="organization" placeholder="Smith Capital Group" />
                 <div class="field-error" id="err-companyName">Please enter your company name.</div>
               </div>
@@ -594,7 +594,7 @@
     function validate() {
       let ok = true;
 
-      const reqFields = ['firstName', 'lastName', 'companyName', 'companyCity', 'email', 'phone'];
+      const reqFields = ['firstName', 'lastName', 'companyCity', 'email', 'phone'];
       reqFields.forEach(id => {
         const val = document.getElementById(id).value.trim();
         const empty = val === '';
